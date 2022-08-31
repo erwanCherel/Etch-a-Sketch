@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divs{
+    display: inline-block;
+    vertical-align: bottom;
+    border: solid black 1px;
+    width: 48px;
+    height: 48px;
+}
+
+#container{
+    width: 800px;
+    height: 800px;
+}
+
