@@ -8,10 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Etch-a-sketch</h1>
 
-    <div class="container"></div>
-    
+    <div id="container"></div>
 
-    <script src="script.js"></script>
+    <div id="gridSize">
+        <input type="text" placeholder="Grid size" value="16" onchange="changeSize(this.value)">
+        <button>Grid size</button>
+    </div>
+
+    <div id="buttons">
+        <button id="blackButton" onclick="black()">Black</button>
+        <button id="greyButton" onclick="grey()">Grey</button>
+        <button id="randomButton" onclick="random()">Random</button>
+        <button id="eraserButton" onclick="eraser()">Eraser</button>
+        <button id="resetButton" onclick="resetGrid()">Reset</button>
+    </div>
+
+    <div class="error">Input must be between 2 and 100</div>
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
