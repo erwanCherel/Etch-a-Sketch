@@ -1,4 +1,3 @@
-
 const color1 = "#E8B75F";
 const color2 = "#923655";
 const white = "white";
@@ -76,3 +75,15 @@ function changeColor(choice){
   })
   }
 }
+
+
+
+  document.querySelector('#randomColor').addEventListener('mouseenter', () => {
+    document.querySelector('#randomColor').style.backgroundColor = `hsl(${Math.random() * 360}, 90%, 70%)`;
+})
+document.querySelector('#randomColor').addEventListener('mouseleave', () => {
+  document.querySelector('#randomColor').style.backgroundColor = "white";
+})
+
+
+// random background color 
