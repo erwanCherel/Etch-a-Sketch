@@ -14,14 +14,15 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #080808;
     font-family: "Press Start 2P";
 }
 
 #header{
     margin: 60px 0px 100px 0px;
     font-size: 2.5rem;
-    color: whitesmoke
+    color: whitesmoke;
+    text-shadow: 5px 5px grey;
 }
 
 #sizeValue{
@@ -33,7 +34,9 @@ body{
     width: 500px;
     height: 500px;
     background-color: white;
-}
+/*     box-shadow: 0px 0px 1px 10px grey;
+ */}
+
 
 #wrapper{
     display: flex;
@@ -54,6 +57,7 @@ body{
     text-align: center;
     gap: 30px;
     justify-content: center;
+    padding: 10px;
 }
 
 
@@ -68,6 +72,7 @@ body{
     border: 3px solid whitesmoke;
   }
 
+
 #sizeSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -79,6 +84,11 @@ body{
     border-radius: 4px;
 }
 
+#sizeSlider::-webkit-slider-thumb:hover{
+    background-color: whitesmoke;
+    border: none;
+}
+
 #sizeSlider::-moz-range-thumb {
     width: 20px;
     height: 50px;
@@ -87,6 +97,11 @@ body{
     border: 3px solid whitesmoke;
     border-radius: 4px;
   }
+  
+#sizeSlider::-moz-range-thumb:hover{
+    background-color: whitesmoke;
+    border: none;
+}
 
 
 #rangeSlider{
@@ -96,16 +111,13 @@ body{
     gap: 30px;
 }
 
-#size{
-    color: white;
-}
-
 #sizeValue{
     font-size: 16px;
 }
 
 #footer{
     color: whitesmoke;
+    text-shadow: 2px 2px grey;
     font-size: 10px;
     position: absolute;
     bottom: 0;

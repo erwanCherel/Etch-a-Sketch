@@ -78,12 +78,17 @@ function changeColor(choice){
 
 
 
-  document.querySelector('#randomColor').addEventListener('mouseenter', () => {
+document.querySelector('#randomColor').addEventListener('mouseenter', () => {
     document.querySelector('#randomColor').style.backgroundColor = `hsl(${Math.random() * 360}, 90%, 70%)`;
 })
 document.querySelector('#randomColor').addEventListener('mouseleave', () => {
-  document.querySelector('#randomColor').style.backgroundColor = "white";
+  document.querySelector('#randomColor').style.backgroundColor = "whitesmoke";
 })
 
+document.querySelector('#container').addEventListener('mouseenter', () => {
+  document.querySelector('#container').style.boxShadow = `0px 0px 1px 10px hsl(${Math.random() * 360}, 90%, 70%)`;
+})
 
-// random background color 
+document.querySelector('#container').addEventListener('mouseleave', () => {
+  document.querySelector('#container').style.boxShadow = "none";
+})
