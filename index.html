@@ -8,24 +8,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Etch-a-sketch</h1>
+<div id="wrapper">
 
-    <div id="container"></div>
+    <h1 id="header">Etch-a-sketch</h1>
 
+    <div id="containerBackground">
+        <div id="container"></div>
+    </div>
+
+    <div id="bottom">
     <div id="gridSize">
         <input type="text" placeholder="Grid size" value="16" onchange="changeSize(this.value)">
         <button>Grid size</button>
     </div>
 
+    <div class="error">Input must be between 2 and 100</div>
+
     <div id="buttons">
-        <button id="blackButton" onclick="black()">Black</button>
-        <button id="greyButton" onclick="grey()">Grey</button>
-        <button id="randomButton" onclick="random()">Random</button>
-        <button id="eraserButton" onclick="eraser()">Eraser</button>
-        <button id="resetButton" onclick="resetGrid()">Reset</button>
+        <button class="button" id="blackButton" onclick="black()">Dark</button>
+        <button class="button" id="greyButton" onclick="grey()">Less Dark</button>
+        <button class="button" id="randomButton" onclick="random()">Random</button>
+        <button class="button" id="eraserButton" onclick="eraser()">Eraser</button>
+        <button class="button" id="resetButton" onclick="resetGrid()">Reset</button>
     </div>
 
-    <div class="error">Input must be between 2 and 100</div>
+    
+</div>
+</div>
 
 
 

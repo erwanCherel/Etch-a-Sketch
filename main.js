@@ -13,7 +13,7 @@ function populateGrid(size){
     }
 
     container.addEventListener('mouseover', (div) => {
-        div.target.style.backgroundColor = "black";
+        div.target.style.backgroundColor = "#06173A";
     })
 }
 populateGrid(16);
@@ -32,17 +32,17 @@ function changeSize(input) {
 function resetGrid(){
   let container = document.querySelector("#container");
   let divs = container.querySelectorAll("div");
-  divs.forEach((div) => (div.style.backgroundColor = "orange"));
+  divs.forEach((div) => (div.style.backgroundColor = "white"));
 }
 
 function black(){
   container.addEventListener('mouseover', (div) => {
-    div.target.style.backgroundColor = "black";
+    div.target.style.backgroundColor = "#06173A";
 })}
 
 function grey(){
   container.addEventListener('mouseover', (div) => {
-    div.target.style.backgroundColor = "grey";
+    div.target.style.backgroundColor = "#4F658F";
 })}
 
 function random(){
@@ -53,6 +53,6 @@ function random(){
 
 function eraser(){
   container.addEventListener('mouseover', (div) => {
-    div.target.style.backgroundColor = "orange";
+    div.target.style.backgroundColor = "white";
 })
 }
