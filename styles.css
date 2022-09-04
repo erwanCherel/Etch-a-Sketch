@@ -14,20 +14,24 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    font-family: "Press Start 2P";
 }
 
 #header{
-    font-family: "Press Start 2P";
     margin: 60px 0px 40px 0px;
     font-size: 2.5rem;
     color: whitesmoke
 }
 
+#sizeValue{
+    color: whitesmoke;
+}
+
 #container{
     display: grid;
-    width: 650px;
-    height: 650px;
+    width: 600px;
+    height: 600px;
     background-color: white;
 }
 
@@ -46,14 +50,50 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+.flex-container{
+    display: flex;
+}
+
+#gridSize{
+    text-align: center;
+}
+
+.selectors{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 
 .error{
-    color: white;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
-#bottom{
-    margin-top: 40px;
+#parameters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80px;
+    justify-content: center;
+}
+
+#size{
+    color: white;
+    font-size: 12px;
+}
+
+#footer{
+    color: whitesmoke;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+a{
+    color: white;
 }
